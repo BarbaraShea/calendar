@@ -16,15 +16,11 @@ function TimeChecker () {
   $(".input").each ( function(){
 
     var timeBlockHour = parseInt($(this).attr("id"));
-    console.log(timeBlockHour);
-    console.log(timeInt);
 
  if (timeBlockHour < timeInt) {
-    console.log("past");
     $(this).addClass("past");
 
   } else if (timeBlockHour === timeInt) {
-    console.log("present");
     $(this).removeClass("past");
     $(this).addClass("present");
 
@@ -37,7 +33,6 @@ function TimeChecker () {
     $(this).addClass("future");
 
   } 
-console.log(this);
 })
 
 }
@@ -48,9 +43,7 @@ console.log(this);
 $(".saveBtn").on("click", function(){
 
   var hours = $(this).parent().attr("id");
-  console.log(hours);
   var input = $(this).siblings(".inputDiv").children(".input").val();
-  console.log(input);
 
   localStorage.setItem(hours, input);
 })
