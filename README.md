@@ -13,6 +13,9 @@ A simple calendar application that allows the user to add events/tasks for each 
 
 # Link
 
+https://barbarashea.github.io/calendar/
 
 
 # Preview
+
+![A user clicks on time-blocks in the color-coded calendar and edits the events.](day-planner-preview.png)
